@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.featureCard:hover .cardBg
+{
+    filter: drop-shadow(0px 0px 30px rgba(38, 38, 38, 0.125)) brightness(2);
+    transition: all ease 0.5s;
+}
+
+
+.featureCard:hover .iconImg
+{
+    filter: brightness(1.2);
+    transition: all ease 2s;
+
+}
+
+.cardWave
+{
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.featureCard .cardWave
+{
+    opacity: 0;
+}
+
+.featureCard:hover .cardWave
+{
+    opacity: 100;
+}
+
+
+
+
+
+.featureCard2:hover .cardBg2
+{
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.534));
+    transition: all ease 0.2s;
+}
+
+
+.featureCard2:hover .iconImg2
+{
+    filter:brightness(1.2);
+    transition: all ease 2s;
+
+}
+
+.cardWave2
+{
+    bottom: -10px;
+    width: 120px;
+
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.featureCard2 .cardWave2
+{
+   opacity: 0;
+}
+
+.featureCard2:hover .cardWave2
+{
+    opacity: 100;
+}
+
+/* for companies names */
+
+.campaniesList
+{
+    animation: 10s infinite linear moveCompany;
+}
+
+@keyframes moveCompany
+{
+    0%
+    {
+        top: 0;
+    }
+
+    100%
+    {
+        top: -150%;
+    }
+    
+}
